@@ -19,7 +19,7 @@ import plotly.graph_objs as go
 
 # Initialize the dash app
 app=dash.Dash(__name__)
-
+server=app.server
 # Load data and preprocessing data
 filename="insurance.csv"
 df=pd.read_csv(filename,engine='python')
